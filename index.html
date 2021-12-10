@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="css/style.css">
+  <title>Livre Education</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="blur-container">
+
+      <header>
+        <div class="logo animate__animated animate__backInLeft">
+          <img src="./img/svg/logo.svg" alt="Logo Livre Education">
+        </div>
+        <nav class="topnav" id="myTopnav">
+          <a href="#objetivo" onclick="menuToggle()">Objetivo</a>
+          <a href="#produto" onclick="menuToggle()">O que é o produto?</a>
+          <a href="#local" onclick="menuToggle()">O Local</a>
+          <a href="#plataforma" onclick="menuToggle()">A Plataforma</a>
+          <a href="#conteudo" onclick="menuToggle()">O Conteúdo</a>
+          <a href="javascript:void(0);" class="icon" onclick="menuToggle()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </nav>
+      </header>
+
+      <main>
+        <div class="hero-message">
+          <h1>"Pensando em construir o futuro, como você solucionaria os problemas de acesso à educação hoje, utilizando
+            a tecnologia?"</h1>
+        </div>
+
+        <div class="grid-boxes">
+
+          <div class="js-tilt reveal-on-scroll box soft-orange" id="objetivo" data-tilt>
+            <div class="box-title">
+              <h6>Objetivo</h6>
+            </div>
+            <p>Dar acesso à educação a pessoas que têm dificuldade em ter acesso a educação por motivos econômicos e em
+              situação de vulnerabilidade.</p>
+          </div>
+
+          <div class="js-tilt reveal-on-scroll box soft-cyan" id="produto" data-tilt>
+            <div class="box-title">
+              <h6>O que é o produto?</h6>
+            </div>
+            <p>O produto consiste na criação de um espaço de CoStudying, que não oferece apenas um local, mas também um
+              kit com os itens para a pessoa estudar, acesso à conteúdos de qualidade, como o da Rocketseat, disponíveis
+              gratuitamente (bancados por parceiros) onde a pessoa possa aprender uma profissão online e com um tutor in
+              loco (voluntário ou não), para poder auxiliar e tirar as dúvidas dos alunos(as).</p>
+          </div>
+
+          <div class="js-tilt reveal-on-scroll box soft-purple" id="local" data-tilt>
+            <div class="box-title">
+              <h6>O Local</h6>
+            </div>
+            <p>Um CoStudying estiloso e que fornece toda uma infraestrutura que inclui: um espaço dividido em baias
+              (algumas separadas, outras não) e outro espaço para atividades mais em conjunto, internet de qualidade,
+              segurança e acessibilidade. Esse local é importante para manter a didática do grupo e também manter o foco
+              e
+              acelerar a evolução dos alunos(as). O local estaria imbuído com um kit, kit esse que estaria disponível
+              justamente para quem não tivesse condições de comprar um PC/Notebook para poder estudar. Além disso, o kit
+              teria fones de ouvidos, uma garrafinha de água e uma camiseta para a pessoa se sentir mais parte ainda do
+              projeto.</p>
+            <p>Todos os custos com o local, seria patrocinado por empresas parceiras e doações voluntárias.</p>
+          </div>
+
+          <div class="js-tilt reveal-on-scroll box soft-green" id="plataforma" data-tilt>
+            <div class="box-title">
+              <h6>A Plataforma • Tecnologia</h6>
+            </div>
+            <p>Teríamos uma plataforma onde seria incluído o conteúdo e onde poderíamos ter todos os dados de progresso
+              dos alunos, onde poderíamos gerar um portfólio, real e dinâmico, com base nesse progresso, garantindo que
+              o
+              aluno conclua todo o conteúdo escolhido e que seja visto e valorizado por empresas, parceiras ou não, para
+              serem contratadas por elas. Também por meio da plataforma, poderíamos ver os pontos fracos e dificuldades
+              do
+              alunos e ir ajudando eles nessas partes.</p>
+          </div>
+
+          <div class="js-tilt reveal-on-scroll box soft-red" id="conteudo" data-tilt>
+            <div class="box-title">
+              <h6>O Conteúdo</h6>
+            </div>
+            <p>Todo o conteúdo teria uma curadoria (para mantê-lo atual) e seria fornecido por meio parcerias feitas
+              empresas dedicadas a fornecer ensino de qualidade pela internet, como, por exemplo, a Rocketseat. Esse
+              conteúdo seria disponibilizado 100% gratuito no local.</p>
+          </div>
+
+          <div class="js-tilt reveal-on-scroll box soft-yellow" data-tilt>
+            <div class="box-title">
+              <h6>O Tutor</h6>
+            </div>
+            <p>Uma pessoa dedicada, com amor em poder ajudar e ensinar. Poderíamos ter um plano de voluntários ou, até
+              mesmo, um colaborador pago.</p>
+          </div>
+
+          <div class="js-tilt reveal-on-scroll box soft-blue" data-tilt>
+            <div class="box-title">
+              <h6>Futuro</h6>
+            </div>
+            <p>Penso que poderia ter locais especializados/focados em determinados tipos de estudo, como um local para
+              programação, outro biologia, outro física e assim por diante.</p>
+          </div>
+        </div>
+
+
+      </main>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-container">
+      <p>Criado por <a href="https://pedropaulo.dev" target="_blank" rel="noopener noreferrer">www.pedropaulo.dev</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/jquery.slim.min.js"></script>
+  <script src="js/scrollreveal"></script>
+  <script src="js/tilt.jquery.min.js"></script>
+  <script defer src="js/scripts.js"></script>
+</body>
+
+</html>

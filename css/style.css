@@ -1,0 +1,227 @@
+:root {
+  --soft-orange: #ffcd81;
+  --soft-cyan: #85ece6;
+  --soft-purple: #d9d0fd;
+  --soft-green: #d0fdd1;
+  --soft-red: #fdd0d2;
+  --soft-yellow: #fcfdd0;
+  --soft-blue: #cfe5f9;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: url("../img/bg.jpg");
+  background-position: top;
+  background-size: 100%;
+}
+
+/* Colors */
+.soft-orange {
+  background-color: #ffcd81;
+}
+.soft-cyan {
+  background-color: #85ece6;
+}
+.soft-purple {
+  background-color: #d9d0fd;
+}
+.soft-green {
+  background-color: #d0fdd1;
+}
+.soft-red {
+  background-color: #fdd0d2;
+}
+.soft-yellow {
+  background-color: #fcfdd0;
+}
+.soft-blue {
+  background-color: #cfe5f9;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0px auto;
+  padding: 1rem 2rem;
+}
+
+.container .blur-container {
+  backdrop-filter: blur(7px);
+  background-color: #ffffff50;
+  border-radius: 12px;
+  padding: 30px 40px;
+  box-shadow: 0px 3px 6px 3px #00000010;
+}
+
+.container .blur-container header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff80;
+  padding: 10px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.container .blur-container header nav li:nth-child(n + 2) {
+  margin-left: 16px;
+}
+
+.container .blur-container header nav li:hover {
+  background-color: #00000020;
+}
+
+.container .blur-container header nav li a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.container .blur-container header nav {
+  overflow: hidden;
+  z-index: 9;
+}
+
+.container .blur-container header nav a {
+  background-color: #00000010;
+  padding: 10px 14px;
+  border-radius: 6px;
+  transition: all 0.5s ease;
+  float: left;
+  display: block;
+  text-decoration: none;
+  color: #000000;
+}
+.container .blur-container header nav a:nth-child(n + 2) {
+  margin-left: 16px;
+}
+.container .blur-container header nav a:hover {
+  background-color: #00000020;
+}
+
+.container .blur-container header nav a.active {
+  background-color: #00000030;
+}
+
+.container .blur-container header nav .icon {
+  display: none;
+}
+
+.container .blur-container main .hero-message {
+  text-align: center;
+  padding: 30px 40px;
+  width: 100%;
+  margin: 1rem 0;
+  background-color: #ffffff70;
+  border-radius: 10px;
+}
+
+.container .blur-container main .hero-message h1 {
+  text-align: center;
+  font-size: 1.7rem;
+  font-weight: 100;
+}
+
+.container .blur-container main .box {
+  border-radius: 10px;
+  padding: 16px;
+}
+
+.container .blur-container main .box .box-title {
+  background-color: #00000010;
+  padding: 12px;
+  border-radius: 7px;
+  margin-bottom: 18px;
+}
+
+.container .blur-container main .box .box-title h6 {
+  font-size: 1.4rem;
+}
+
+.container .blur-container main .box p {
+  font-size: 1.2rem;
+  font-weight: 100;
+}
+
+.container .blur-container main .box p:nth-child(n + 1) {
+  margin-top: 17px;
+}
+
+.container .blur-container main .grid-boxes {
+  columns: 2 200px;
+  column-gap: 1rem;
+}
+
+.container .blur-container main .grid-boxes div {
+  margin: 0 0 1rem 0;
+}
+
+footer {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0px auto;
+  padding: 1rem 2rem;
+}
+
+footer .footer-container {
+  backdrop-filter: blur(7px);
+  background-color: #ffffff50;
+  border-radius: 12px;
+  padding: 30px 40px;
+  box-shadow: 0px 3px 6px 3px #00000010;
+  text-align: center;
+}
+
+footer .footer-container p a {
+  color: #000000;
+}
+
+@media (max-width: 720px) {
+  .container .blur-container main .grid-boxes {
+    columns: 1 100%;
+  }
+}
+
+@media screen and (max-width: 1030px) {
+  .container .blur-container header nav a {
+    display: none;
+  }
+  .container .blur-container header nav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1030px) {
+  .container .blur-container header nav.responsive {
+    position: absolute;
+    right: 10px;
+    top: 16px;
+    background: #ffffff;
+    padding: 42px 0 0 0;
+  }
+  .container .blur-container header nav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .container .blur-container header nav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+    margin-bottom: 4px;
+    margin-left: 5px;
+  }
+  .container .blur-container header nav a:nth-child(n + 2) {
+    margin-left: 5px;
+  }
+}
